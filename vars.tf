@@ -47,3 +47,14 @@ variable "private_sub_tags" {
     Name = "private_subnet"
   }
 }
+
+variable "region" {
+default = "ap-south-1"
+}
+variable "nat_amis" {
+type = map
+default = {
+ap-south-1 = "ami-00b3aa8a93dd09c13"
+ap-southeast-1 = "ami-09a7bbd08886aafdf"
+}
+}

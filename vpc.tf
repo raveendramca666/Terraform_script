@@ -68,7 +68,7 @@ resource "aws_subnet" "private" {
       Name = "terraform_private_routetable"
     }
   }
-  
+
   # create associate private subnets with public route table
   resource "aws_route_table_association" "pa" {
     count = 2

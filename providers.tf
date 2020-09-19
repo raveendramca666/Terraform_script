@@ -1,8 +1,7 @@
 # Configure the AWS Provider
 provider "aws" {
-  region  = "ap-south-1"
+  region  = var.region
 }
-
 
 # Terraform S3 backend
 #terraform {
